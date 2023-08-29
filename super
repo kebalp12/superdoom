@@ -1,0 +1,69 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local StartGui = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Frame.BackgroundTransparency = 0.450
+Frame.Position = UDim2.new(0.0373973139, 0, 0.414264023, 0)
+Frame.Size = UDim2.new(0, 329, 0, 301)
+Frame.Active = true
+Frame.Draggable = true
+
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BackgroundTransparency = 0.600
+TextLabel.BorderColor3 = Color3.fromRGB(80, 80, 80)
+TextLabel.Position = UDim2.new(0, 0, -0.000441089272, 0)
+TextLabel.Size = UDim2.new(0, 329, 0, 50)
+TextLabel.Font = Enum.Font.RobotoMono
+TextLabel.Text = "Inf Rocket Ammo Super Doomspire"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 0.550
+TextLabel_2.Position = UDim2.new(0, 0, 0.83217901, 0)
+TextLabel_2.Size = UDim2.new(0, 329, 0, 50)
+TextLabel_2.Font = Enum.Font.SourceSans
+TextLabel_2.Text = "This Script Was made by SMART POEPLE GROUP"
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextStrokeTransparency = 0.000
+TextLabel_2.TextWrapped = true
+
+StartGui.Name = "StartGui"
+StartGui.Parent = Frame
+StartGui.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StartGui.BackgroundTransparency = 1.000
+StartGui.Position = UDim2.new(0.194528878, 0, 0.415789217, 0)
+StartGui.Size = UDim2.new(0, 200, 0, 50)
+StartGui.Font = Enum.Font.SourceSans
+StartGui.Text = "Turn on"
+StartGui.TextColor3 = Color3.fromRGB(255, 255, 255)
+StartGui.TextScaled = true
+StartGui.TextSize = 14.000
+StartGui.TextStrokeTransparency = 0.000
+StartGui.TextWrapped = true
+StartGui.MouseButton1Down:connect(function()
+	hookfunction(time, function() return math.huge end)
+end)
